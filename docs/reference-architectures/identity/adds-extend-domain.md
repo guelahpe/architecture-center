@@ -129,6 +129,7 @@ A solution is available on [GitHub][github] to deploy this reference architectur
 * Learn the best practices for [creating an Active Directory Federation Services (AD FS) infrastructure][adfs] in Azure.
 
 <!-- links -->
+
 [adds-resource-forest]: adds-forest.md
 [adfs]: adfs.md
 

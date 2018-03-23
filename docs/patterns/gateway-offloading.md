@@ -57,25 +57,25 @@ Using Nginx as the SSL offload appliance, the following configuration terminates
 
 ```
 upstream iis {
-    	server  10.3.0.10    max_fails=3 	fail_timeout=15s;
-    	server  10.3.0.20    max_fails=3 	fail_timeout=15s;
-    	server  10.3.0.30    max_fails=3 	fail_timeout=15s;
+        server  10.3.0.10    max_fails=3    fail_timeout=15s;
+        server  10.3.0.20    max_fails=3    fail_timeout=15s;
+        server  10.3.0.30    max_fails=3    fail_timeout=15s;
 }
 
 server {
-    	listen 443;
-    	ssl on;
-    	ssl_certificate /etc/nginx/ssl/domain.cer;
-    	ssl_certificate_key /etc/nginx/ssl/domain.key;
+        listen 443;
+        ssl on;
+        ssl_certificate /etc/nginx/ssl/domain.cer;
+        ssl_certificate_key /etc/nginx/ssl/domain.key;
 
-    	location / {
-            	set $targ iis;
-            	proxy_pass http://$targ;
-            	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            	proxy_set_header X-Forwarded-Proto https;
+        location / {
+                set $targ iis;
+                proxy_pass http://$targ;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto https;
 proxy_set_header X-Real-IP $remote_addr;
-            	proxy_set_header Host $host;
-    	}
+                proxy_set_header Host $host;
+        }
 }
 ```
 

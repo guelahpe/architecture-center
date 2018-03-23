@@ -262,6 +262,7 @@ public void ConfigureServices(IServiceCollection services)
 [**Next**][token cache]
 
 <!-- links -->
+
 [ADAL]: https://msdn.microsoft.com/library/azure/jj573266.aspx
 [JwtBearer]: https://www.nuget.org/packages/Microsoft.AspNet.Authentication.JwtBearer
 

@@ -48,8 +48,10 @@ account are tied to that account, subscriptions exist independently of their
 owner accounts, and can be reassigned to new owners as needed.
 
 ![Comparison of structure and ownership of AWS accounts and Azure subscriptions](./images/azure-aws-account-compare.png "Comparison of structure and ownership of AWS accounts and Azure subscriptions")
-<br/>*Comparison of structure and ownership of AWS accounts and Azure subscriptions*
+<br/><em>Comparison of structure and ownership of AWS accounts and Azure subscriptions</em>
+
 <br/><br/>
+
 
 Subscriptions are assigned three types of administrator accounts:
 
@@ -360,7 +362,7 @@ allow you to create and manage the following storage services:
     storage](https://azure.microsoft.com/documentation/articles/storage-java-how-to-use-file-storage/) - offers shared storage for legacy applications using the standard server
     message block (SMB) protocol. File storage is used in a similar manner to
     EFS in the AWS platform.
- 
+
 #### Glacier and Azure Storage 
 
 [Azure Archive Blob Storage](/azure/storage/blobs/storage-blob-storage-tiers#archive-access-tier) is comparable to AWS Glacier storage service. It is intended for rarely accessed data that is stored for at least 180 days and can tolerate several hours of retrieval latency. 

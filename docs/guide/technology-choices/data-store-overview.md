@@ -110,7 +110,7 @@ The key characteristics of a search engine database are the ability to store and
 
 Searching can be exact or fuzzy. A fuzzy search finds documents that match a set of terms and calculates how closely they match. Some search engines also support linguistic analysis that can return matches based on synonyms, genre expansions (for example, matching `dogs` to `pets`), and stemming (matching words with the same root). 
 
-Relevant Azure service:	[Azure Search][search]
+Relevant Azure service: [Azure Search][search]
 
 ## Time Series Databases
 
@@ -118,13 +118,13 @@ Time series data is a set of values organized by time, and a time series databas
 
 Time series databases are good for storing telemetry data. Scenarios include IoT sensors or application/system counters.
 
-Relevant Azure service:	[Time Series Insights][time-series]
+Relevant Azure service: [Time Series Insights][time-series]
 
 ## Object storage  
 
 Object storage is optimized for storing and retrieving large binary objects (images, files, video and audio streams, large application data objects and documents, virtual machine disk images). Objects in these store types are composed of the stored data, some metadata, and a unique ID for accessing the object. Object stores enables the management of extremely large amounts of unstructured data.  
 
-Relevant Azure service:	[Blob Storage][blob]
+Relevant Azure service: [Blob Storage][blob]
 
 ## Shared files   
 

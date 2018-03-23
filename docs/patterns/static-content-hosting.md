@@ -93,6 +93,7 @@ A solution named StaticContentHosting that demonstrates using external storage f
 ```xml
 <Setting name="StaticContent.StorageConnectionString"
          value="UseDevelopmentStorage=true" />
+
 <Setting name="StaticContent.Container" value="static-content" />
 ```
 

@@ -97,6 +97,7 @@ For information about setting up client assertion in the Surveys application, se
 [**Next**][key vault]
 
 <!-- Links -->
+
 [configure-web-app]: /azure/app-service-web/web-sites-configure/
 [azure-management-portal]: https://portal.azure.com
 [client assertion]: https://tools.ietf.org/html/rfc7521

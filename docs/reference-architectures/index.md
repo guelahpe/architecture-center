@@ -4,7 +4,9 @@ description: Reference architectures, blueprints, and prescriptive implementatio
 layout: LandingPage
 ---
 <!-- This file is generated! -->
+
 <!-- See the templates in ./build/reference-architectures  -->
+
 <!-- See data in index.json -->
 
 # Azure Reference Architectures

@@ -129,6 +129,7 @@ Measure the recovery times and verify they meet your business requirements. Test
 
 
 <!-- Links -->
+
 [hybrid-vpn]: ../hybrid-networking/vpn.md
 [azure-dns]: /azure/dns/dns-overview
 [cassandra-in-azure]: https://academy.datastax.com/resources/deployment-guide-azure

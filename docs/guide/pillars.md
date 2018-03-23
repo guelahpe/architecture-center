@@ -181,6 +181,7 @@ Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, y
  
 
 <!-- patterns -->
+
 [availability-patterns]: ../patterns/category/availability.md
 [management-patterns]: ../patterns/category/management-monitoring.md
 [resiliency-patterns]: ../patterns/category/resiliency.md
@@ -188,6 +189,7 @@ Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, y
 
 
 <!-- practices -->
+
 [autoscale]: ../best-practices/auto-scaling.md
 [background-jobs]: ../best-practices/background-jobs.md
 [caching]: ../best-practices/caching.md
@@ -199,6 +201,7 @@ Use Key Vault to safeguard cryptographic keys and secrets. By using Key Vault, y
 
 
 <!-- checklist -->
+
 [availability-checklist]: ../checklist/availability.md
 [devops-checklist]: ../checklist/dev-ops.md
 [resiliency-checklist]: ../checklist/resiliency.md

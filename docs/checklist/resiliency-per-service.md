@@ -138,6 +138,7 @@ If you are using Redis Cache as a temporary data cache and not as a persistent s
 **Enable Load Balancer logging.** The logs show how many VMs on the back-end are not receiving network traffic due to failed probe responses. For more information, see [Log analytics for Azure Load Balancer](/azure/load-balancer/load-balancer-monitor-log/).
 
 <!-- links -->
+
 [boot-diagnostics]: https://azure.microsoft.com/blog/boot-diagnostics-for-virtual-machines-v2/
 [diagnostics-logs]: /azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs/
 [managed-disks]: /azure/storage/storage-managed-disks-overview

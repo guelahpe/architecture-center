@@ -19,8 +19,8 @@ Here is a summary of the steps:
 6. Add application roles to users.
 
 ## Prerequisites
--	[Visual Studio 2017][VS2017]
--	[Microsoft Azure](https://azure.microsoft.com) account
+-   [Visual Studio 2017][VS2017]
+-   [Microsoft Azure](https://azure.microsoft.com) account
 
 ## Create the Tailspin tenant
 
@@ -48,15 +48,15 @@ To complete the end-to-end scenario, you'll need a second Azure AD directory to 
 
 3. Click **App registrations** > **New application registration**.
 
-4.	In the **Create** blade, enter the following information:
+4. In the **Create** blade, enter the following information:
 
-  - **Name**: `Surveys.WebAPI`
+   - **Name**: `Surveys.WebAPI`
 
-  - **Application type**: `Web app / API`
+   - **Application type**: `Web app / API`
 
-  - **Sign-on URL**: `https://localhost:44301/`
+   - **Sign-on URL**: `https://localhost:44301/`
    
-  ![](./images/running-the-app/register-web-api.png) 
+   ![](./images/running-the-app/register-web-api.png) 
 
 5. Click **Create**.
 
@@ -70,19 +70,19 @@ To complete the end-to-end scenario, you'll need a second Azure AD directory to 
 
 9. Set **Multi-tenanted** to **YES**.
 
-10.	Click **Save**.
+10. Click **Save**.
 
 ## Register the Surveys web app 
 
-1.	Navigate back to the **App registrations** blade, and click **New application registration**.
+1. Navigate back to the **App registrations** blade, and click **New application registration**.
 
-2.	In the **Create** blade, enter the following information:
+2. In the **Create** blade, enter the following information:
 
-  - **Name**: `Surveys`
-  - **Application type**: `Web app / API`
-  - **Sign-on URL**: `https://localhost:44300/`
+   - **Name**: `Surveys`
+   - **Application type**: `Web app / API`
+   - **Sign-on URL**: `https://localhost:44300/`
    
-    Notice that the sign-on URL has a different port number from the `Surveys.WebAPI` app in the previous step.
+   Notice that the sign-on URL has a different port number from the `Surveys.WebAPI` app in the previous step.
 
 3. Click **Create**.
  
@@ -114,28 +114,28 @@ To complete the end-to-end scenario, you'll need a second Azure AD directory to 
 
 15. In the **Select Duration** dropdown, select **1 year**. 
 
-16.	Click **Save**. The key will be generated when you save.
+16. Click **Save**. The key will be generated when you save.
 
-17.	Before you navigate away from this blade, copy the value of the key.
+17. Before you navigate away from this blade, copy the value of the key.
 
     > [!NOTE] 
     > The key won't be visible again after you navigate away from the blade. 
 
-18.	Under **API ACCESS**, click **Required permissions**.
+18. Under **API ACCESS**, click **Required permissions**.
 
-19.	Click **Add** > **Select an API**.
+19. Click **Add** > **Select an API**.
 
-20.	In the search box, search for `Surveys.WebAPI`.
+20. In the search box, search for `Surveys.WebAPI`.
 
     ![Permssions](./images/running-the-app/permissions.png)
 
-21.	Select `Surveys.WebAPI` and click **Select**.
+21. Select `Surveys.WebAPI` and click **Select**.
 
-22.	Under **Delegated Permissions**, check **Access Surveys.WebAPI**.
+22. Under **Delegated Permissions**, check **Access Surveys.WebAPI**.
 
     ![Setting delegated permissions](./images/running-the-app/delegated-permissions.png)
 
-23.	Click **Select** > **Done**.
+23. Click **Select** > **Done**.
 
 
 ## Update the application manifests
@@ -146,36 +146,36 @@ To complete the end-to-end scenario, you'll need a second Azure AD directory to 
 
     ![](./images/running-the-app/manifest.png)
  
-3.	Add the following JSON to the `appRoles` element. Generate new GUIDs for the `id` properties.
+3. Add the following JSON to the `appRoles` element. Generate new GUIDs for the `id` properties.
 
-    ```json
-    {
-      "allowedMemberTypes": ["User"],
-      "description": "Creators can create surveys",
-      "displayName": "SurveyCreator",
-      "id": "<Generate a new GUID. Example: 1b4f816e-5eaf-48b9-8613-7923830595ad>",
-      "isEnabled": true,
-      "value": "SurveyCreator"
-    },
-    {
-      "allowedMemberTypes": ["User"],
-      "description": "Administrators can manage the surveys in their tenant",
-      "displayName": "SurveyAdmin",
-      "id": "<Generate a new GUID>",  
-      "isEnabled": true,
-      "value": "SurveyAdmin"
-    }
-    ```
+   ```json
+   {
+     "allowedMemberTypes": ["User"],
+     "description": "Creators can create surveys",
+     "displayName": "SurveyCreator",
+     "id": "<Generate a new GUID. Example: 1b4f816e-5eaf-48b9-8613-7923830595ad>",
+     "isEnabled": true,
+     "value": "SurveyCreator"
+   },
+   {
+     "allowedMemberTypes": ["User"],
+     "description": "Administrators can manage the surveys in their tenant",
+     "displayName": "SurveyAdmin",
+     "id": "<Generate a new GUID>",  
+     "isEnabled": true,
+     "value": "SurveyAdmin"
+   }
+   ```
 
-5.	In the `knownClientApplications` property, add the application ID for the Surveys web application, which you got when you registered the Surveys application earlier. For example:
+4. In the `knownClientApplications` property, add the application ID for the Surveys web application, which you got when you registered the Surveys application earlier. For example:
 
-  ```json
-  "knownClientApplications": ["be2cea23-aa0e-4e98-8b21-2963d494912e"],
-  ```
+   ```json
+   "knownClientApplications": ["be2cea23-aa0e-4e98-8b21-2963d494912e"],
+   ```
 
-  This setting adds the Surveys app to the list of clients authorized to call the web API.
+   This setting adds the Surveys app to the list of clients authorized to call the web API.
 
-6.	Click **Save**.
+5. Click **Save**.
 
 Now repeat the same steps for the Surveys app, except do not add an entry for `knownClientApplications`. Use the same role definitions, but generate new GUIDs for the IDs.
 
@@ -183,9 +183,9 @@ Now repeat the same steps for the Surveys app, except do not add an entry for `k
 
 The Surveys application uses Redis to cache OAuth 2 access tokens. To create the cache:
 
-1.	Go to [Azure Portal](https://portal.azure.com) and click **New** > **Databases** > **Redis Cache**.
+1.  Go to [Azure Portal](https://portal.azure.com) and click **New** > **Databases** > **Redis Cache**.
 
-2.	Fill in the required information, including DNS name, resource group, location, and pricing tier. You can create a new resource group or use an existing resource group.
+2.  Fill in the required information, including DNS name, resource group, location, and pricing tier. You can create a new resource group or use an existing resource group.
 
 3. Click **Create**.
 
@@ -197,11 +197,11 @@ For more information about creating a Redis cache, see [How to Use Azure Redis C
 
 ## Set application secrets
 
-1.	Open the Tailspin.Surveys solution in Visual Studio.
+1.  Open the Tailspin.Surveys solution in Visual Studio.
 
-2.	In Solution Explorer, right-click the Tailspin.Surveys.Web project and select **Manage User Secrets**.
+2.  In Solution Explorer, right-click the Tailspin.Surveys.Web project and select **Manage User Secrets**.
 
-3.	In the secrets.json file, paste in the following:
+3.  In the secrets.json file, paste in the following:
     
     ```json
     {
@@ -224,9 +224,9 @@ For more information about creating a Redis cache, see [How to Use Azure Redis C
     - `AzureAd:WebApiResourceId`: The App ID URI that you specified when you created the Surveys.WebAPI application in Azure AD. It should have the form `https://<directory>.onmicrosoft.com/surveys.webapi`
     - `Redis:Configuration`: Build this string from the DNS name of the Redis cache and the primary access key. For example, "tailspin.redis.cache.windows.net,password=2h5tBxxx,ssl=true".
 
-4.	Save the updated secrets.json file.
+4.  Save the updated secrets.json file.
 
-5.	Repeat these steps for the Tailspin.Surveys.WebAPI project, but paste the following into secrets.json. Replace the items in angle brackets, as before.
+5.  Repeat these steps for the Tailspin.Surveys.WebAPI project, but paste the following into secrets.json. Replace the items in angle brackets, as before.
 
     ```json
     {
@@ -243,11 +243,11 @@ For more information about creating a Redis cache, see [How to Use Azure Redis C
 
 In this step, you will use Entity Framework 7 to create a local SQL database, using LocalDB.
 
-1.	Open a command window
+1.  Open a command window
 
-2.	Navigate to the Tailspin.Surveys.Data project.
+2.  Navigate to the Tailspin.Surveys.Data project.
 
-3.	Run the following command:
+3.  Run the following command:
 
     ```
     dotnet ef database update --startup-project ..\Tailspin.Surveys.Web
@@ -259,9 +259,9 @@ To run the application, start both the Tailspin.Surveys.Web and Tailspin.Surveys
 
 You can set Visual Studio to run both projects automatically on F5, as follows:
 
-1.	In Solution Explorer, right-click the solution and click **Set Startup Projects**.
-2.	Select **Multiple startup projects**.
-3.	Set **Action** = **Start** for the Tailspin.Surveys.Web and Tailspin.Surveys.WebAPI projects.
+1.  In Solution Explorer, right-click the solution and click **Set Startup Projects**.
+2.  Select **Multiple startup projects**.
+3.  Set **Action** = **Start** for the Tailspin.Surveys.Web and Tailspin.Surveys.WebAPI projects.
 
 ## Sign up a new tenant
 
@@ -290,23 +290,23 @@ When a tenant signs up, an AD admin for the tenant must assign application roles
 
 3. Click **Enterprise applications** > **All applications**. The portal will list `Survey` and `Survey.WebAPI`. If not, make sure that you completed the sign up process.
 
-4.	Click on the Surveys application.
+4.  Click on the Surveys application.
 
-5.	Click **Users and Groups**.
+5.  Click **Users and Groups**.
 
-4.	Click **Add user**.
+4.  Click **Add user**.
 
-5.	If you have Azure AD Premium, click **Users and groups**. Otherwise, click **Users**. (Assigning a role to a group requires Azure AD Premium.)
+5.  If you have Azure AD Premium, click **Users and groups**. Otherwise, click **Users**. (Assigning a role to a group requires Azure AD Premium.)
 
 6. Select one or more users and click **Select**.
 
     ![Select user or group](./images/running-the-app/select-user-or-group.png)
 
-6.	Select the role and click **Select**.
+6.  Select the role and click **Select**.
 
     ![Select user or group](./images/running-the-app/select-role.png)
 
-7.	Click **Assign**.
+7.  Click **Assign**.
 
 Repeat the same steps to assign roles for the Survey.WebAPI application.
 

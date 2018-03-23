@@ -114,10 +114,10 @@ INNER JOIN [Person].[Person] p ON c.[PersonID] = p.[BusinessEntityID]
 INNER JOIN [Sales].[SalesOrderDetail] sod ON soh.[SalesOrderID] = sod.[SalesOrderID]
 WHERE soh.[TerritoryId] = @TerritoryId
 AND soh.[SalesOrderId] IN (
-	SELECT TOP 20 SalesOrderId
-	FROM [Sales].[SalesOrderHeader] soh
-	WHERE soh.[TerritoryId] = @TerritoryId
-	ORDER BY soh.[TotalDue] DESC)
+    SELECT TOP 20 SalesOrderId
+    FROM [Sales].[SalesOrderHeader] soh
+    WHERE soh.[TerritoryId] = @TerritoryId
+    ORDER BY soh.[TotalDue] DESC)
 ORDER BY soh.[TotalDue] DESC, sod.[SalesOrderDetailID]
 ```
 

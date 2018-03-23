@@ -158,6 +158,7 @@ Resiliency is the ability of a system to recover from failures and continue to f
 
 
 <!-- links -->
+
 [app-service-autoscale]: /azure/monitoring-and-diagnostics/insights-how-to-scale/
 [asynchronous-c-sharp]: /dotnet/articles/csharp/async
 [availability-sets]:/azure/virtual-machines/virtual-machines-windows-manage-availability/

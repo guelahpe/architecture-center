@@ -4,7 +4,9 @@ description: Explains and compares the different methods available for managing 
 layout: LandingPage
 ---
 <!-- This file is generated! -->
+
 <!-- See the templates in ./build/reference-architectures  -->
+
 <!-- See data in index.json -->
 
 # Identity management

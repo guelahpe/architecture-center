@@ -4,7 +4,9 @@ description: Recommended architectures for secure, robust network connections be
 layout: LandingPage
 ---
 <!-- This file is generated! -->
+
 <!-- See the templates in ./build/reference-architectures  -->
+
 <!-- See data in index.json -->
 
 # Connect an on-premises network to Azure

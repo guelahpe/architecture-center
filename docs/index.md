@@ -8,6 +8,7 @@ ms.topic: landing-page
 # Azure Architecture Center
 
 <!-- main panel -->
+
 <ul class="panelContent cardsC">
     <!-- A3G -->
     <li>
@@ -63,6 +64,7 @@ ms.topic: landing-page
 </ul>
 
 <!-- Second panel -->
+
 <ul class="panelContent cardsI">
     <!-- Microservices -->
     <li>
@@ -346,3 +348,4 @@ ms.topic: landing-page
         </a>
     </li>
 </ul>
+

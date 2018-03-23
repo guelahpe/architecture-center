@@ -100,9 +100,9 @@ Now assign this user as the subscription owner.
 
 3. Select **Azure Active Directory** > **App Registrations** > Surveys
 
-4.	Click **Manifest** and then **Edit**.
+4.  Click **Manifest** and then **Edit**.
 
-5.	Paste the output from the script into the `keyCredentials` property. It should look similar to the following:
+5.  Paste the output from the script into the `keyCredentials` property. It should look similar to the following:
         
     ```json
     "keyCredentials": [
@@ -281,6 +281,7 @@ Replace the entries in [square brackets] and save the secrets.json file.
 [**Next**][adfs]
 
 <!-- Links -->
+
 [adfs]: ./adfs.md
 [authorize-app]: /azure/key-vault/key-vault-get-started//#authorize
 [azure-portal]: https://portal.azure.com

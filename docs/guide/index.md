@@ -8,6 +8,7 @@ This guide presents a structured approach for designing applications on Azure th
 
 <img src="./images/guide-steps.svg" style="max-width:800px;"/>
 
+
 ## Introduction
 
 The cloud is changing the way applications are designed. Instead of monoliths, applications are decomposed into smaller, decentralized services. These services communicate through APIs or by using asynchronous messaging or eventing. Applications scale horizontally, adding new instances as demand requires. 

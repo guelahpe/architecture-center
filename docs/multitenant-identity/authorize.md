@@ -98,7 +98,6 @@ In earlier versions of ASP.NET, you would set the **Roles** property on the attr
 ```csharp
 // old way
 [Authorize(Roles = "SurveyCreator")]
-
 ```
 
 This is still supported in ASP.NET Core, but it has some drawbacks compared with authorization policies:
@@ -244,6 +243,7 @@ static readonly Dictionary<OperationAuthorizationRequirement, Func<List<UserPerm
 [**Next**][web-api]
 
 <!-- Links -->
+
 [Tailspin]: tailspin.md
 
 [Application roles]: app-roles.md

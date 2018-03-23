@@ -21,4 +21,5 @@ Most enterprises already have at least one identity management service, typicall
 * Now that you have learned about Azure AD tenants, the first step in the foundational adoption stage is to learn [how to get an Azure Active Directory tenant][how-to-get-aad-tenant]. Then review the [design guidance for Azure AD tenants](tenant.md).
 
 <!-- Links -->
+
 [how-to-get-aad-tenant]: /azure/active-directory/develop/active-directory-howto-tenant?toc=/azure/architecture/cloud-adoption-guide/toc.json

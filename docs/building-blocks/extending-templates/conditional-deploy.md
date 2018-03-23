@@ -120,6 +120,7 @@ Now that we've worked around the validation issue, we can simply specify the dep
 * This technique is implemented in the [template building blocks project](https://github.com/mspnp/template-building-blocks) and the [Azure reference architectures](/azure/architecture/reference-architectures/). You can use these to create your own architecture or deploy one of our reference architectures.
 
 <!-- links -->
+
 [azure-resource-manager-condition]: /azure/azure-resource-manager/resource-group-authoring-templates#resources
 [azure-resource-manager-variable]: /azure/azure-resource-manager/resource-group-authoring-templates#variables
 [vnet-peering-resource-schema]: /azure/templates/microsoft.network/virtualnetworks/virtualnetworkpeerings

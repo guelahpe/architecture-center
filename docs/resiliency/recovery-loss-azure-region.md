@@ -5,6 +5,7 @@ author: adamglick
 ms.date: 08/18/2016
 ---
 [!INCLUDE [header](../_includes/header.md)]
+
 # Azure resiliency technical guidance: recovery from a region-wide service disruption
 Azure is divided physically and logically into units called regions. A region consists of one or more datacenters in close proximity. 
 
@@ -61,9 +62,13 @@ Geo-replication is included in current pricing for Azure Storage. This is called
 If a geo-failover occurs, this will be posted to the [Azure Service Health Dashboard](https://azure.microsoft.com/status/). Applications can implement an automated means of detecting this, however, by monitoring the geo-region for their storage account. This can be used to trigger other recovery operations, such as activation of compute resources in the geo-region where their storage moved to. You can perform a query for this from the service management API, by using [Get Storage Account Properties](https://msdn.microsoft.com/library/ee460802.aspx). The relevant properties are:
 
     <GeoPrimaryRegion>primary-region</GeoPrimaryRegion>
+
     <StatusOfPrimary>[Available|Unavailable]</StatusOfPrimary>
+
     <LastGeoFailoverTime>DateTime</LastGeoFailoverTime>
+
     <GeoSecondaryRegion>secondary-region</GeoSecondaryRegion>
+
     <StatusOfSecondary>[Available|Unavailable]</StatusOfSecondary>
 
 ### VM disks and geo-failover

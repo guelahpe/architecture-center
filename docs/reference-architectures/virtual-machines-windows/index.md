@@ -4,7 +4,9 @@ description: Explains some common architectures for deploying VMs that host ente
 layout: LandingPage
 ---
 <!-- This file is generated! -->
+
 <!-- See the templates in ./build/reference-architectures  -->
+
 <!-- See data in index.json -->
 
 # Windows VM workloads

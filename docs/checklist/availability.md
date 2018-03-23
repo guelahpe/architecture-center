@@ -75,4 +75,5 @@ Availability is the proportion of time that a system is functional and working, 
 **Plan for disaster recovery.** Create an accepted, fully-tested plan for recovery from any type of failure that may affect system availability. Choose a multi-site disaster recovery architecture for any mission-critical applications. Identify a specific owner of the disaster recovery plan, including automation and testing. Ensure the plan is well-documented, and automate the process as much as possible. Establish a backup strategy for all reference and transactional data, and test the restoration of these backups regularly. Train operations staff to execute the plan, and perform regular disaster simulations to validate and improve the plan.
 
 <!-- links -->
+
 [availability-sets]:/azure/virtual-machines/virtual-machines-windows-manage-availability/

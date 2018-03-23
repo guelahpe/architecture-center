@@ -4,7 +4,9 @@ description: Recommended architectures for a web applications running in Microso
 layout: LandingPage
 ---
 <!-- This file is generated! -->
+
 <!-- See the templates in ./build/reference-architectures  -->
+
 <!-- See data in index.json -->
 
 # App Service web application
